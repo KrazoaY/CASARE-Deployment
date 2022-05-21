@@ -7,13 +7,15 @@ if (count($files) == 1) {
 	$filename = basename($files[0]);
 	header("Location: " . $url . "/" . $filename);
 } else {
-	print("<br><h2>Achtung, keine oder mehr als eine PDF Datei :-(</h2><br>\n");
+	print("<br><h2>Wohin soll die Reise gehen?</h2><br>\n");
 	foreach ($files as $val) {
       print("<a href=\"" .basename($val). "\" >".basename($val)."</a><br>\n");
     }
 	echo "<hr>";
 	print_r($files);
+	echo "\n";
 	print(count($files));
+	echo "<hr>";
 }
 
 ?>
