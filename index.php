@@ -9,7 +9,7 @@ if (count($files) == 1) {
 } else {
 	print("<br><h2>Achtung, keine oder mehr als eine PDF Datei :-(</h2><br>\n");
 	foreach ($files as $val) {
-      print("<a href=\"" .basename($val). "\" /><br>\n");
+      print("<a href=\"" .basename($val). "\" >".basename($val)."</a><br>\n");
     }
 	echo "<hr>";
 	print_r($files);
