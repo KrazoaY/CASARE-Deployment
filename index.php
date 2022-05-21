@@ -8,8 +8,8 @@ if (count($files) == 1) {
 	header("Location: " . $url . "/" . $filename);
 } else {
 	print("<br /><h2>Achtung, keine oder mehr als eine PDF Datei :-(</h2><br />");
-	foreach ($files as $file) {
-      print("<a href="$file" />");
+	foreach ($files as $val) {
+      print("<a href="$val" />");
     }
 	print_r($files);
 	print(count($files));
