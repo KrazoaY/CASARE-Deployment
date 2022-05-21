@@ -11,7 +11,7 @@ if (count($files) == 1) {
 	foreach ($files as $val) {
       print("<a href=\"" .basename($val). "\" /><br>\n");
     }
-	echo "<hr>"
+	echo "<hr>";
 	print_r($files);
 	print(count($files));
 }
